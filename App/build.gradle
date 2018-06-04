@@ -23,7 +23,8 @@ dependencies {
     println IsBuildModule.toBoolean()
 
     if (IsBuildModule.toBoolean()) {
-
+        compile project(':ModuleA')
+        compile project(':ModuleB')
     } else {
         compile project(':Library')
     }
